@@ -1,0 +1,10 @@
+ol {
+	list-style-position: outside;
+	list-style-type: upper-roman;
+	color: #940654;
+}
+
+ul {
+	list-style-type: disc;
+	color: #940654;
+}
