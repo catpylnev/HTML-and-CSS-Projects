@@ -3,12 +3,14 @@
 <head>
 	<meta charset="utf-8">
 	<title> The Cat Distribution System </title>
+	<link rel="stylesheet" href="./CSS/shared.css">
+	<link rel="stylesheet" href="./css/animations.css">
 </head>
 <body>
 		<!---Nav---->
-			<div>
-				<div>
-					<ul>
+			<div class="wrap">
+				<div class="menu">
+					<ul class="menu">
 						<a href="#home" id="link"><li>HOME</li> </a>
 						<a href="#gallery" id="link"><li>GALLERY</li></a>
 						<a href="#contact" id="link"><li>RESERVATIONS</li></a>
@@ -20,9 +22,9 @@
 		
 		<!--HOME-->
 		<div id="home">
-			<div>
-				<div>
-					<span> The Cat Distribution System </span>
+			<div class="container">
+				<div class="text-center">
+					<span class="head-main"> The Cat Distribution System </span>
 				</div>
 			</div>
 		</div>
@@ -40,8 +42,8 @@
 					<div class="photo-container">
 						<div class="photo">
 							<img src="./Thumb/thumbnail_1.jpg" alt="Cat standing in leaves.">
-							<div>
-								<h3 class="white-head">Click to Enlarge</h3>
+							<div class="photo-overlay">
+								<h3>Click to Enlarge</h3>
 									<p> Thousands of cats have found a happy home, thanks to the CDS. </p>
 							</div>
 						</div>
@@ -51,8 +53,8 @@
 					<div class="photo-container">
 						<div class="photo">
 							<img src="./Thumb/thumbnail_2.jpeg" alt="Cat laying on couch.">
-							<div>
-								<h3 class="white-head">Click to Enlarge</h3>
+							<div class="photo-overlay">
+								<h3>Click to Enlarge</h3>
 									<p> Thousands of cats have found a happy home, thanks to the CDS. </p>
 							</div>
 						</div>
@@ -62,8 +64,8 @@
 					<div class="photo-container">
 						<div class="photo">
 							<img src="./Thumb/thumbnail_3.jpg" alt="Small tabby kitten.">
-							<div>
-								<h3 class="white-head">Click to Enlarge</h3>
+							<div class="photo-overlay">
+								<h3>Click to Enlarge</h3>
 									<p> Thousands of cats have found a happy home, thanks to the CDS. </p>
 							</div>
 						</div>
@@ -73,8 +75,8 @@
 					<div class="photo-container">
 						<div class="photo">
 							<img src="./Thumb/thumbnail_4.jpeg" alt="Fluffy cat prancing in grass.">
-							<div>
-								<h3 class="white-head">Click to Enlarge</h3>
+							<div class="photo-overlay">
+								<h3>Click to Enlarge</h3>
 									<p> Thousands of cats have found a happy home, thanks to the CDS. </p>
 							</div>
 						</div>
@@ -84,8 +86,8 @@
 					<div class="photo-container">
 						<div class="photo">
 							<img src="./Thumb/thumbnail_5.jpeg" alt="Cat walking on fence.">
-							<div>
-								<h3 class="white-head">Click to Enlarge</h3>
+							<div class="photo-overlay">
+								<h3>Click to Enlarge</h3>
 									<p> Thousands of cats have found a happy home, thanks to the CDS. </p>
 							</div>
 						</div>
@@ -95,8 +97,8 @@
 					<div class="photo-container">
 						<div class="photo">
 							<img src="./Thumb/thumbnail_6.jpg" alt="Cat walking on roof.">
-							<div>
-								<h3 class="white-head">Click to Enlarge</h3>
+							<div class="photo-overlay">
+								<h3>Click to Enlarge</h3>
 									<p> Thousands of cats have found a happy home, thanks to the CDS. </p>
 							</div>
 						</div>
@@ -106,8 +108,8 @@
 					<div class="photo-container">
 						<div class="photo">
 							<img src="./Thumb/thumbnail_7.jpeg" alt="Cat in grass.">
-							<div>
-								<h3 class="white-head">Click to Enlarge</h3>
+							<div class="photo-overlay">
+								<h3>Click to Enlarge</h3>
 									<p> Thousands of cats have found a happy home, thanks to the CDS. </p>
 							</div>
 						</div>
@@ -117,8 +119,8 @@
 					<div class="photo-container">
 						<div class="photo">
 							<img src="./Thumb/thumbnail_8.jpg" alt="Orange cat in grass.">
-							<div>
-								<h3 class="white-head">Click to Enlarge</h3>
+							<div class="photo-overlay">
+								<h3>Click to Enlarge</h3>
 									<p> Thousands of cats have found a happy home, thanks to the CDS. </p>
 							</div>
 						</div>
@@ -128,8 +130,8 @@
 					<div class="photo-container">
 						<div class="photo">
 							<img src="./Thumb/thumbnail_9.jpeg" alt="Happy cat in bed.">
-							<div>
-								<h3 class="white-head">Click to Enlarge</h3>
+							<div class="photo-overlay">
+								<h3>Click to Enlarge</h3>
 									<p> Thousands of cats have found a happy home, thanks to the CDS. </p>
 							</div>
 						</div>
@@ -147,14 +149,17 @@
 		<!--RSVP-->
 		<section>
 			<div id="contact">
-				<div>
-					<h1>Reservations</h1>
-					<div>
-						<h2><span>Your perfect cat is just around the corner.</span>
-							<br />Reserve your cat today!
+				<div class="heading-padding">
+					<h1 class="heading-padding">Reservations</h1>
+					<div class="reservation">
+						<h2>
+							<span>Your perfect cat is just around the corner.</span>
+							<br/>Reserve your cat today!
 							</h2>
-						<p> Please provide us with your basic contact information. </p>
-						<div>
+						<p class="rsvp-text"> 
+							Please provide us with your basic contact information. 
+						</p>
+						<div class="form-rsvp">
 							<form action="" method="post">
 								<input class="rsvp" type="text" value="First Name">
 								<input class="rsvp" type="text" value="Last Name">
@@ -163,7 +168,8 @@
 								<div class="form-spacer">
 									<label class="terms">Terms and Conditions</label>
 								</div>
-								<input type="submit" value="Submit">
+								<div class="submit">
+									<input type="submit" value="Submit">
 								</div>
 							</form>
 						</div>
@@ -175,7 +181,7 @@
 		<!--END RSVP-->			
 		
 		<!--FOOTER-->
-		<div>
+		<div id="footer">
 			www.catdistribution.center &nbsp;|&nbsp; &copy; 2023
 		</div>
 		
