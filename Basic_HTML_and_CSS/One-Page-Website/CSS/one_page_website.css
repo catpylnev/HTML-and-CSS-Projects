@@ -1,0 +1,259 @@
+/* styles.css */
+iframe {
+    border: 2px solid #000; 
+}
+
+/* Page */
+html {
+    font-family: sans-serif;
+    font-size: 62.5%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+#contact {
+    background-color: #c0a080; 
+}
+
+.reservation {
+    width: 60%;
+    padding: 10px;
+    border-radius: 15px; 
+    margin: 0 auto;
+    box-shadow: -1px 1px 1px 0 #FFBE94, 1px 2px 10px 0 rgba(0, 0, 0, 0.5);
+    font-family: 'Comic Sans MS' ;
+}
+
+.reservation h2,
+.reservation h2 span {
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
+    color: #523b18; 
+    font-weight: 500;
+    font-size: 1.3em;
+}
+
+.reservation h2 span {
+    font-weight: 900;
+    font-size: 1.5em;
+    font-variant: small-caps;
+    letter-spacing: .4pt;
+    word-spacing: .3pt;
+}
+
+.reservation p {
+    color: #523b18; 
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Comic Sans MS';
+}
+
+.reservation form {
+    font-size: 15px;
+    outline: none;
+    font-weight: 600;
+    color: #5c4022; 
+    padding: 12px 12px;
+    width: 70%;
+    margin: 2% auto;
+    border-radius: 15px;    
+    background: #e0c090; 
+    box-shadow: 2px 3px 3px 0px rgba(0, 0, 0, 0.3);
+    font-family: 'Comic Sans MS';
+}
+
+.reservation input[type="text"] {
+    font-size: 15px;
+    outline: none;
+    font-weight: 600;
+    color: #5c4022;     
+    padding: 2% 1% 2% 7%;
+    width: 80%;
+    margin: 10px 1em;
+    border-radius: 15px; 
+    background: #523b18;    
+    box-shadow: inset 0px 3px 0px 0px rgba(5, 5, 5, 0.15);
+    font-family: 'Comic Sans MS';
+}
+
+.reservation input[type="text"]:hover {
+    box-shadow: 0, 0, 18px rgba(100, 65, 0, .8);
+}
+
+.form-space {
+    padding: 30px 39px;
+}
+
+.terms {
+    margin-top: 13%;
+    margin: 30px 1px 0 0;
+    padding-left: 52px;
+    font-size: 14px;
+    line-height: 5px;
+    color: #000;
+    cursor: pointer;
+    font-family: 'Comic Sans MS';
+    font-weight: 600;
+    position: relative;
+    display: inline;
+    float: right;
+}
+
+.terms:hover {
+    color: #523b18; 
+    text-decoration: underline; 
+}
+
+.submit input[type="submit"] {
+    color: rgb(245, 220, 190);
+    cursor: pointer;
+    border: none;
+    font-weight: 900;
+    outline: none;
+    text-align: center;
+    font-family: 'Comic Sans MS';
+    margin: 0px 3%;
+    padding: 7px 0px;
+    width: 25%;
+    font-size: 18px;
+    transition: border-color 0.3s color 0.3s background-color 0.3s;
+    border-radius: 15px; 
+    background-color: #c0a080; 
+    box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.3);
+}
+
+.submit input[type="submit"]:hover {
+    color: #523b18; 
+    background-color: #e0c090; 
+    box-shadow: inset 1px 2px 15px 0 rgba(0, 0, 0, 0.5);
+}
+
+#footer {
+    background-color: rgba(100, 65, 0, .3);
+    color: #523b18; 
+    text-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 1);
+    padding: 20px 50px 20px 50px;
+    text-align: right;
+}
+
+
+/* containers */
+
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.container-fluid{
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.row{
+    margin-right: -15px;
+    margin-left: 15px;
+}
+
+.clearfix::after,
+.container::after,
+.navbar::after{
+    clear: both;
+    display: table;
+    content: " ";
+}
+
+.wrap{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+    top: 25px;
+    left: 0;
+    text-align:center;
+}
+
+.menu-container {
+    max-height: 340px;
+    margin: 0% auto;
+    content: " ";
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+
+
+.flex-container{
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 0px auto;
+    background-color: rgba(100, 65, 0, .3);
+    box-shadow: 2px 2px 10px 0 rgba(0, 0,0, 0.5);
+}
+
+/* home */
+
+#home {
+    background: url(../Thumb/background.jpg) no-repeat 50% 50%;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    display: block;
+    height: auto;
+    padding-top: 350px;
+    padding-bottom: 500px;
+    color: #fff;
+}
+
+body {
+    font-size: 14px;
+    margin: 0;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #FFD8B1;
+}
+
+
+.head-main {
+    text-shadow:2px 4px 5px rgba(0, 0,0, 0.9);
+    font-variant: small-caps;
+    color: #fff;
+    letter-spacing: 3pt;
+    word-spacing: 4pt;
+    font-size: 4.5em;
+    text-align: left;
+    font-family: impact, sans-serif;
+    line-height: 2;
+    font-weight: 900;
+    border: 5px double #fff;
+    padding: 10px;
+}
+
+.head-sub-main{
+    font-size: 8px;
+    font-weight: 500;
+    padding: 50px 20px 10px 20px;
+    text-transform: uppercase;
+}
+
+.head-last {
+    font-size: 8px;
+    font-weight: 900;
+    padding: 5px 20px 20px 20px;
+    border: 1px dotted #fff;
+    padding: 5px;
+}
