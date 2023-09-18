@@ -69,7 +69,7 @@ html {
     font-size: 15px;
     outline: none;
     font-weight: 600;
-    color: #5c4022;     
+    color: #eee0d1;     
     padding: 2% 1% 2% 7%;
     width: 80%;
     margin: 10px 1em;
@@ -235,7 +235,7 @@ body {
     letter-spacing: 3pt;
     word-spacing: 4pt;
     font-size: 4.5em;
-    text-align: left;
+    text-align: center;
     font-family: impact, sans-serif;
     line-height: 2;
     font-weight: 900;
@@ -248,6 +248,7 @@ body {
     font-weight: 500;
     padding: 50px 20px 10px 20px;
     text-transform: uppercase;
+    text-align: center;
 }
 
 .head-last {
@@ -255,5 +256,14 @@ body {
     font-weight: 900;
     padding: 5px 20px 20px 20px;
     border: 1px dotted #fff;
-    padding: 5px;
+    padding: 5px; 
+    text-align: center;
+}
+
+
+.heading-padding {
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-right: auto;
+    margin-left: auto;
 }
