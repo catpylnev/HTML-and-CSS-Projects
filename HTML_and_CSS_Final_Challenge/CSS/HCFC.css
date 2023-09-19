@@ -1,0 +1,155 @@
+.navbar{
+    background-color: pink;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.navbar a{
+    float: left;
+    display: block;
+    color: rgb(53, 78, 87);
+    text-align: center;
+    padding: 14px 16px;
+}
+
+.navbar a:hover{
+    background: yellow;
+    color: rgb(31, 21, 21);
+}
+
+.center{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+
+.filter{
+    filter:sepia(100%);
+}
+
+.rounded{
+    border: 2px solid brown;
+    border-radius: 50px 20px
+}
+
+.divfooter{
+    text-align: center;
+    font-weight: bold;
+}
+
+table{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table, th, td {
+    border: 2px solid navy;
+}
+
+th, td{
+padding:10px;
+}
+
+.rowcolor{
+    background-color: lightblue;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    color: rgb(255, 0, 0);
+  }
+
+.imagetext{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+body, h2, p{
+    margin:0;
+    padding: 0;
+}
+
+.column{
+    width: 300px;
+    height: 200px;
+    padding: 20px;
+    border: 1px solid black;
+    margin: 10px;  
+}
+
+.column h2{
+    color:aquamarine;
+}
+
+.column p:hover{
+    background-color: blanchedalmond;
+}
+
+.columncontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.containeroverlay{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+}
+
+.image{
+    display: block;
+    height: auto;
+    width: 180px ;
+    height: 100px;
+    
+}
+
+.overlay{
+    position: absolute;
+    width: 180px ;
+    height: 100px;
+    opacity: 0;
+    transition: 0.5s ease;
+    background-color: palegoldenrod;
+    justify-content: center;
+    align-items: center;
+    pointer-events: auto;
+    
+}
+
+.containeroverlay:hover .overlay{
+    opacity: .8;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+.video {
+    width: auto;
+    height: auto;
+    display: inline-block;
+}
+
+.videooverlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7); 
+    color: #fff; 
+    padding: 10px 20px;
+    border-radius: 10px;
+}
