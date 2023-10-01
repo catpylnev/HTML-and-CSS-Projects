@@ -4,12 +4,13 @@
 	<meta charset="utf-8">
 	<title> The Three Bears </title>
 	<link rel="stylesheet" type="text/css" href="./CSS/one_page_website.css">
+	<script src="./JS/one_page_website.js"></script>
 </head>
 <body>
 		<!---Nav---->
 			<div>
 				<div>
-					<ul>
+					<ul> 
 						<a href="#home" id="link"><li>HOME</li> </a>
 						<a href="#gallery" id="link"><li>CONTESTANTS</li></a>
 						<a href="#contact" id="link"><li>VERDICT</li></a>
@@ -31,61 +32,74 @@
 		<!--END HOME-->
 		
 		<!--GALLERY-->
-	
-		<section id="gallery">
-			<div class="container">
-				<h1>CONTESTANTS</h1>
-				<div class="flex-container">
-				
-					<!--PHOTO CONTAINER 1-->
-					<div class="photo-container">
-						<div class="photo">
-							<img src="./Thumb/dad.png" alt="Father Bear" style="width: 300px; height: 200px";>
-							<div>
-								<h3 class="white-head"></h3>
-									<p> Father Bear </p>
-							</div>
-						</div>
-					</div>
-					<!--END PHOTO CONTAINER 1 -->
-					<!--PHOTO CONTAINER 2-->
-					<div class="photo-container">
-						<div class="photo">
-							<img src="./Thumb/mama.png" alt="Mama Bear" style="width: 300px; height: 200px";>
-							<div>
-								<h3 class="white-head"></h3>
-									<p> Mama Bear </p>
-							</div>
-						</div>
-					</div>
-					<!--END PHOTO CONTAINER 2 -->
-					<!--PHOTO CONTAINER 3-->
-					<div class="photo-container">
-						<div class="photo">
-							<img src="./Thumb/baby.png" alt="Baby Bear"style="width: 300px; height: 200px";>
-							<div>
-								<h3 class="white-head"></h3>
-									<p> Baby Bear </p>
-							</div>
-						</div>
-					</div>
-					<!--END PHOTO CONTAINER 3 -->
-			
-					<!--VIDEO-->
-					
-					<iframe width="300" height="200" src="https://www.youtube.com/embed/qOJ_A5tgBKM?si=q6ttUFFBFIcYsKwa" 
-       				 title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; picture-in-picture; web-share" allowfullscreen>
-   					 </iframe>
-					
-					<!--END VIDEO-->
-					
-					
-				</div>
-			</div>
-		</section>
-		
-	
-		<!--END GALLERY -->
+	<!-- Images used to open the lightbox -->
+<div class="row">
+	<div class="column">
+	  <img src="./Thumb/babyS.png" onclick="openModal();currentSlide(1)" class="hover-shadow">
+	</div>
+	<div class="column">
+	  <img src="./Thumb/mamaS.png" onclick="openModal();currentSlide(2)" class="hover-shadow">
+	</div>
+	<div class="column">
+	  <img src="./Thumb/dadS.png" onclick="openModal();currentSlide(3)" class="hover-shadow">
+	</div>
+	<div class="column">
+	  <img src="./Thumb/porrS.png" onclick="openModal();currentSlide(4)" class="hover-shadow">
+	</div>
+  </div>
+  
+  <!-- The Modal/Lightbox -->
+  <div id="myModal" class="modal">
+	<span class="close cursor" onclick="closeModal()">&times;</span>
+	<div class="modal-content">
+  
+	  <div class="mySlides">
+		<div class="numbertext">1 / 4</div>
+		<img src="./Thumb/baby.png" style="width:100%">
+	  </div>
+  
+	  <div class="mySlides">
+		<div class="numbertext">2 / 4</div>
+		<img src="./Thumb/mama.png" style="width:100%">
+	  </div>
+  
+	  <div class="mySlides">
+		<div class="numbertext">3 / 4</div>
+		<img src="./Thumb/dad.png" style="width:100%">
+	  </div>
+  
+	  <div class="mySlides">
+		<div class="numbertext">4 / 4</div>
+		<img src="./Thumb/porr.png" style="width:100%">
+	  </div>
+  
+	  <!-- Next/previous controls -->
+	  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+	  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+	  <!-- Caption text -->
+	  <div class="caption-container">
+		<p id="caption"></p>
+	  </div>
+  
+	  <!-- Thumbnail image controls -->
+	  <div class="column">
+		<img class="demo" src="./Thumb/babyS.png" onclick="currentSlide(1)" alt="Baby">
+	  </div>
+  
+	  <div class="column">
+		<img class="demo" src="./Thumb/mamaS.png" onclick="currentSlide(2)" alt="Mom">
+	  </div>
+  
+	  <div class="column">
+		<img class="demo" src="./Thumb/dadS.png" onclick="currentSlide(3)" alt="Dad">
+	  </div>
+  
+	  <div class="column">
+		<img class="demo" src="./Thumb/porrS.png" onclick="currentSlide(4)" alt="Porridge">
+	  </div>
+	</div>
+  </div>
 		
 		<!--RSVP-->
 		<section>
